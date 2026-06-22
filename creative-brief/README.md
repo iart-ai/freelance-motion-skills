@@ -23,4 +23,4 @@ Convert a vague client ask ("we need a cool animated explainer") into a structur
 - `references/worked-example.md` — a real vague ask turned into a completed brief.
 
 ---
-Part of **[Motion Design Business Skills](../)** · Built by **[iart.ai](https://iart.ai)** — controllable Motion Graphics MP4 from a prompt or data.
+Part of **[Motion Design Business Skills](../)** · Built by **[iart.ai](https://iart.ai)** — the AI motion agent for editable, on-brand motion graphics.

@@ -23,4 +23,4 @@ Produce a defensible quote for a motion design project: choose a pricing model, 
 - `references/rate-card.md` — expanded 2026 ranges by deliverable type and a day-rate worksheet.
 
 ---
-Part of **[Motion Design Business Skills](../)** · Built by **[iart.ai](https://iart.ai)** — controllable Motion Graphics MP4 from a prompt or data.
+Part of **[Motion Design Business Skills](../)** · Built by **[iart.ai](https://iart.ai)** — the AI motion agent for editable, on-brand motion graphics.

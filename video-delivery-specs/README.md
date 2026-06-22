@@ -24,4 +24,4 @@ Deliver motion content correctly across platforms: produce per-platform spec she
 - `references/qc-checklist.md` — complete QC checklist plus the collect-files/handover packaging list and naming convention.
 
 ---
-Part of **[Motion Design Business Skills](../)** · Built by **[iart.ai](https://iart.ai)** — controllable Motion Graphics MP4 from a prompt or data.
+Part of **[Motion Design Business Skills](../)** · Built by **[iart.ai](https://iart.ai)** — the AI motion agent for editable, on-brand motion graphics.

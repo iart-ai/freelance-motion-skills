@@ -23,4 +23,4 @@ Control revision rounds and scope creep on motion projects: define what a revisi
 - `references/feedback-translator.md` — expanded vague-to-targeted feedback lookup and a "problem not fix" coaching note.
 
 ---
-Part of **[Motion Design Business Skills](../)** · Built by **[iart.ai](https://iart.ai)** — controllable Motion Graphics MP4 from a prompt or data.
+Part of **[Motion Design Business Skills](../)** · Built by **[iart.ai](https://iart.ai)** — the AI motion agent for editable, on-brand motion graphics.

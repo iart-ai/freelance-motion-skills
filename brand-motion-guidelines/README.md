@@ -23,4 +23,4 @@ Author a brand motion system — the document that defines how a brand or produc
 - `references/dos-and-donts.md` — a library of concrete do/don't pairs and worked principle examples.
 
 ---
-Part of **[Motion Design Business Skills](../)** · Built by **[iart.ai](https://iart.ai)** — controllable Motion Graphics MP4 from a prompt or data.
+Part of **[Motion Design Business Skills](../)** · Built by **[iart.ai](https://iart.ai)** — the AI motion agent for editable, on-brand motion graphics.
