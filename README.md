@@ -1,13 +1,13 @@
-# Motion Design Business Skills
+# Freelance Motion Skills
 
-> The motion design business / freelance toolkit for AI coding agents — brief, price, manage revisions, deliver, and document brand motion without the back-office guesswork.
+> The freelance motion design toolkit for AI coding agents — brief, price, manage revisions, deliver, and document brand motion without the back-office guesswork.
 
 Five skills for freelance motion designers and studios running the business side: turning vague client asks into sign-off-ready briefs, building defensible quotes, capping scope creep, exporting to the right platform specs, and authoring brand motion systems.
 
 ## Install
 
 ```
-npx skills add iart-ai/motion-business-skills
+npx skills add iart-ai/freelance-motion-skills
 ```
 
 Works with Claude Code, Cursor, Codex, GitHub Copilot, and 40+ agents.
@@ -48,13 +48,13 @@ Works with Claude Code, Cursor, Codex, GitHub Copilot, and 40+ agents.
 
 ## Topics
 
-`motion-design` · `freelance` · `creative-brief` · `pricing` · `client-revisions` · `video-delivery` · `brand-guidelines` · `claude-skill`
+`freelance-motion` · `motion-design` · `creative-brief` · `pricing` · `client-revisions` · `video-delivery` · `brand-guidelines` · `claude-skill`
 
 ## More packs
 
 Part of an 11-pack open-source collection — install only what you need. Full hub: **[github.com/iart-ai](https://github.com/iart-ai)**
 
-[short-form-video-skills](https://github.com/iart-ai/short-form-video-skills) (Reels / TikTok / Shorts) · [creator-channel-skills](https://github.com/iart-ai/creator-channel-skills) (Podcasters & YouTubers) · [ecommerce-video-skills](https://github.com/iart-ai/ecommerce-video-skills) (E-commerce sellers) · [ad-video-skills](https://github.com/iart-ai/ad-video-skills) (Brand advertisers) · [data-video-skills](https://github.com/iart-ai/data-video-skills) (Analysts & PMs) · [explainer-video-skills](https://github.com/iart-ai/explainer-video-skills) (Educators) · [web-animation-skills](https://github.com/iart-ai/web-animation-skills) (Frontend devs) · [motion-design-skills](https://github.com/iart-ai/motion-design-skills) (Motion designers) · [3d-motion-skills](https://github.com/iart-ai/3d-motion-skills) (3D / WebGL) · [manim-skills](https://github.com/iart-ai/manim-skills) (Math / educational)
+[tiktok-video-skills](https://github.com/iart-ai/tiktok-video-skills) (TikTok / Reels / Shorts) · [youtube-video-skills](https://github.com/iart-ai/youtube-video-skills) (Podcasters & YouTubers) · [ecommerce-video-skills](https://github.com/iart-ai/ecommerce-video-skills) (E-commerce sellers) · [ad-video-skills](https://github.com/iart-ai/ad-video-skills) (Brand advertisers) · [data-animation-skills](https://github.com/iart-ai/data-animation-skills) (Analysts & PMs) · [explainer-video-skills](https://github.com/iart-ai/explainer-video-skills) (Educators) · [web-animation-skills](https://github.com/iart-ai/web-animation-skills) (Frontend devs) · [motion-design-skills](https://github.com/iart-ai/motion-design-skills) (Motion designers) · [webgl-animation-skills](https://github.com/iart-ai/webgl-animation-skills) (3D / WebGL) · [manim-skills](https://github.com/iart-ai/manim-skills) (Math / educational)
 
 
 ## License
