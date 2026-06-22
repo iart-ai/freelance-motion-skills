@@ -12,6 +12,25 @@ Produce a defensible quote for a motion design project: choose a pricing model, 
 
 Use when pricing any motion/animation project, sanity-checking an existing number, setting or revisiting a day rate, or explaining to a client why a price is what it is. The output is a structured quote plus the reasoning behind each line.
 
+## Decision tree — which pricing model
+
+```
+Is the brief locked (scope, deliverables, revision cap all defined)?
+├─ NO  → bill DAY RATE (or refuse to fix-quote until the brief is locked).
+│        Exploratory/discovery/retainer work is day-rate by nature.
+└─ YES → Is the work a repeatable style or a series (many similar units)?
+         ├─ YES → estimate in days, sanity-check PER-FINISHED-MINUTE,
+         │        present as fixed per-project.
+         └─ NO  → Is it tied to large campaign / broadcast / paid spend
+                  where the deliverable's value >> its production cost?
+                  ├─ YES → estimate in days for the floor, then apply
+                  │        VALUE-BASED usage uplift on top.
+                  └─ NO  → estimate in days, present FIXED PER-PROJECT
+                           with a revision cap. ← the default path.
+```
+
+Always estimate internally in **days** (the only honest unit of effort), whatever you bill on. The model above only decides what the *client sees*.
+
 ## Step 1 — Pick a pricing model
 
 | Model | Bill on | Best for | Watch out |
@@ -22,6 +41,19 @@ Use when pricing any motion/animation project, sanity-checking an existing numbe
 | **Value-based** | Outcome/usage to client | High-leverage brand/ad work | Requires knowing the client's stakes |
 
 Default approach: estimate internally in **days** (the only honest unit of effort), then present to the client as a **fixed per-project** price with a revision cap. Use per-finished-minute only as a cross-check or for series work, and value-based when the deliverable is tied to a large campaign or broadcast spend.
+
+### Rate model × project type (worked numbers @ £600/day)
+
+Illustrative only — anchors, not prices. See references/rate-card.md for full ranges and localize before quoting.
+
+| Project type | Internal estimate | Present as | Example total |
+|---|---|---|---|
+| 30s flat-2D explainer (organic) | ~16 days | Fixed per-project + 2-round cap | ~£9,600 |
+| Same explainer, paid + broadcast, rush | ~16 days × uplifts | Fixed + usage uplift + rush | ~£20,600 |
+| 6× 6s social bumper series | ~9 days | Per-finished-minute cross-check | ~£5,400 (~£900 ea) |
+| Brand discovery / open-ended R&D | unknown | Day rate | £600 × days billed |
+| National TV ad (3D hero) | ~40 days floor | Value-based on media spend | day-floor + large usage uplift |
+| Animated logo sting | ~3-5 days | Fixed per-project | £1,800-3,000 |
 
 ## Step 2 — Set the day rate
 
@@ -114,6 +146,50 @@ These are rough Western-market starting points; rates vary widely by region, sen
 | Broadcast/paid usage uplift | +25-200% over organic base |
 
 Caveat: treat every number as a starting anchor, not a fixed price. Localize to currency, region, and the client's tier, and reconcile against the day-rate math in Step 2.
+
+## Worked examples
+
+**GOOD — driver-built, defensible:**
+> 30s flat-2D explainer, organic social, brand assets exist, clear brief.
+> Concept 1d · board 2d · design 3d · animation 5d · cutdowns 1.5d · sound 1d · revisions 1.5d · PM 1d = **16 days × £600 = £9,600**. No rush, organic = +0%. Per-minute cross-check flags short-form is costly per second — day math stands.
+
+Every line is a day estimate tied to a driver, revisions are capped, usage matches price. The client sees one fixed number; the day math stays internal. Full walkthrough in references/worked-example.md.
+
+**ANTI-PATTERN — the "gut number" quote:**
+> "A 30-second animation? Call it £3,000, sounds about right."
+
+Why it fails: no day math (£3,000 ÷ £600 = 5 days for a job that's really 16 — a £6,600 loss), "design" silently absorbed into "animation," revisions uncapped, and the same number whether it runs on Instagram or national TV. Gut numbers either lose money or get undercut by someone who did the math. Always build up from days and drivers, then sanity-check.
+
+## Common mistakes
+
+| Symptom | Why it happens | Fix |
+|---|---|---|
+| Quote loses money on delivery | Divided target income by ~260 days, not ~130 billable | Use realistic billable days in the worksheet |
+| Scope creep eats the margin | Fixed-quoted an unlocked brief | Don't fix-quote until the brief is locked; cap revisions |
+| Design work "disappeared" | Folded asset creation into the animation line | Make every asset (design, 3D, sound, VO) its own line |
+| Endless revisions, flat fee | No revision cap stated | Cap rounds (2); price extras at day rate, in writing |
+| Underpriced broadcast/paid job | Quoted national usage at organic-social rate | Apply usage uplift over the base; usage is real value |
+| Rush job at normal price | Absorbed the compressed timeline silently | Add +25-50% rush surcharge and say why |
+| Client haggles the day count | Showed the internal day breakdown | Present a fixed total; keep day math internal unless billing by day |
+
+## Deliverable spec — what a good quote contains
+
+The output is a line-itemed quote document (template in references/quote-template.md) plus the internal day-math reasoning. A good quote:
+- States scope: deliverables (count × duration × format), style, revisions included, and usage/term.
+- Shows a clear total the client approves (day breakdown stays internal unless billing by day).
+- Names rush and usage uplifts explicitly when they apply.
+- Lists payment terms (deposit, balance-before-handover, kill fee) and exclusions.
+- Has a validity window (30 days) and an acceptance line.
+
+### Before you finish — checklist
+- [ ] Estimated in days, reconciled to the day-rate worksheet.
+- [ ] Every asset (design, 3D, rigging, sound, VO) is its own line.
+- [ ] Revisions capped, with extra-round pricing stated.
+- [ ] Usage/term matches the price (organic vs paid vs broadcast vs buyout).
+- [ ] Rush surcharge applied if the timeline is compressed.
+- [ ] Per-finished-minute cross-check run; total is sane for the style.
+- [ ] Contingency (10-15%) added for vague/ambitious briefs.
+- [ ] Payment terms, exclusions, validity window, and acceptance line present.
 
 ## Quick reference
 

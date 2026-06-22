@@ -12,6 +12,32 @@ Control revision rounds and scope creep on motion projects: define what a revisi
 
 Use when feedback is mounting, when a client keeps adding "small tweaks," when the SOW needs revision language, when a vague note ("make it pop") needs decoding before touching the file, or when a request has clearly crossed into new work and needs a change-order reply.
 
+## Decision tree — classify every note before touching the file
+
+The whole skill is one judgment applied per note: *is this a revision, a new request, or just vague?* Run each note through this before opening the project.
+
+```
+A note arrives.
+├─ Is it vague ("make it pop", "feels off")?
+│   └─ YES → translate to a decidable choice + ask for a timestamp.
+│            Do NOT act yet. Re-classify once it's concrete.
+└─ Is it concrete?
+    ├─ Does it change something ALREADY approved in brief/board?
+    │   (timing, palette colour, approved-copy edit, a fix)
+    │   └─ YES → REVISION. Counts against the round cap. Do it.
+    └─ Is it anything NOT in the approved brief/board?
+        (new scene, +runtime, new concept, new ratio, new asset,
+         reversing an approved decision, "let's also try…")
+        └─ YES → NEW REQUEST. Send the change-order email. Quote it.
+                 Do NOT silently absorb it.
+
+Is feedback scattered across people/messages?
+└─ YES → STOP. Send the consolidated-feedback request first; one
+         document, all stakeholders, conflicts resolved by the client.
+```
+
+Decision rule: when unsure whether a note is a revision or new request, ask "was this decided and approved already?" If yes → revision. If it adds, replaces, or reverses → new request.
+
 ## The core distinction: revision vs new request
 
 This single line prevents most disputes — put it in the SOW and the feedback request:
@@ -118,6 +144,47 @@ Either way works for me; just let me know which you prefer.
 ```
 
 Tone notes: collaborative, never accusatory. Offer the choice (proceed or park), give a number, and state the timeline impact. The goal is to make the trade-off visible, not to say "no."
+
+## Worked examples
+
+**GOOD — vague note decoded, then executed cleanly:**
+> Client: "The intro feels off." → You: "Off in pacing, colour, or message — and which 2 seconds feel worst?" → Client: "The first 3 seconds drag before the logo." → You re-time the entrance (a revision, within scope), log it as Round 1. One question turned a feeling into a precise, in-scope fix.
+
+**ANTI-PATTERN — silently absorbing scope:**
+> Client: "Love it! Can we also do a square version and add a quick outro scene?" → You quietly build both, eat 2 extra days, and the project runs late and unprofitable.
+
+Why it fails: a new aspect ratio and a new scene are both *new requests*, not revisions — but absorbing them without a change order trains the client that scope is free, sets a precedent, and erases your margin. The fix: reply with the change-order email, give a number and a timeline impact, and let the client choose. Saying "happy to — here's what it takes" is not saying no.
+
+## Common mistakes
+
+| Symptom | Why it happens | Fix |
+|---|---|---|
+| Endless rounds, never "final" | No cap defined, or cap not cited | State the cap in the SOW *before* round 1; cite it at round N+1 |
+| Conflicting notes, redo loops | Acted on per-person feedback | Require one consolidated doc; client resolves conflicts |
+| Margin gone on "tiny tweaks" | New requests absorbed as revisions | Classify every note; new work → change order with a price |
+| Acted on "make it pop," still wrong | Executed a vague note literally | Translate to a decidable choice + timestamp before touching the file |
+| Reworking an approved scene | Approval gate not locked | Lock each stage in writing; reopening a locked stage = new request |
+| Feedback dribbles in for days | No single submission deadline | One round = one document; later notes roll to the next round |
+| Client feels nickel-and-dimed | Change orders framed as "no" | Frame as a visible trade-off (proceed or park), never as refusal |
+
+## Deliverable spec — what good revision handling produces
+
+The outputs are emails and contract language, not files. Good handling means:
+- The SOW defines a "round," caps rounds, and distinguishes revision vs new request *before* work starts.
+- Each feedback round is one consolidated document, logged by round number.
+- Vague notes are converted to decidable questions with timestamps before execution.
+- New requests get a change-order email with work, cost, and timeline impact — never silent absorption.
+- Tone stays collaborative: every email offers a choice and states the trade-off.
+
+### Before you finish — checklist
+- [ ] SOW states the round count, the "round" definition, and revision-vs-new-request.
+- [ ] Feedback is consolidated (one doc, all stakeholders, conflicts resolved).
+- [ ] Every note classified: revision / new request / vague-needs-translation.
+- [ ] Vague notes translated to bounded choices + a requested timestamp.
+- [ ] New requests sent as change orders with cost + timeline impact.
+- [ ] The current round number is logged and visible to both sides.
+- [ ] Approval gates locked in writing; reopening flagged as new work.
+- [ ] Every client email offers a choice and avoids accusatory tone.
 
 ## Quick reference
 

@@ -12,6 +12,28 @@ Author a brand motion system — the document that defines how a brand or produc
 
 Use when a brand or product needs a documented motion language, when animation feels inconsistent across a team, when defining named easing/duration tokens for designers and engineers, or when adding a reduced-motion/accessibility standard. The output is a structured doc, not code.
 
+## Decision tree — scope the system, then pick the token
+
+Two judgments: *how big a system does this brand actually need*, and *which token a given motion should use*. Don't build a 7-part system for a landing page; don't ship a one-pager for a multi-team design system.
+
+```
+How many surfaces/teams will use this?
+├─ One site / one campaign → lightweight: principles + tokens + a short
+│   library. Skip deep logo/state sections unless relevant.
+├─ A product (app/web) → full 7-part doc; tokens are mandatory.
+└─ A brand across product + marketing + broadcast → full doc PLUS a
+    Motion Personality preset (see motion-direction) so every medium matches.
+
+Picking the token for a given motion:
+  duration: larger element / longer travel → longer token
+            (instant<fast<base<slow<slower)
+  easing:   entrance → decelerate · exit → accelerate (and shorter)
+            within-view move → standard · brand moment → emphasized
+            continuous loop → linear · playful accent → spring (sparingly)
+```
+
+Rule of thumb: if a motion can't name the token it uses, it's a one-off — and one-offs are what make a system feel inconsistent.
+
 ## What a motion system contains
 
 A complete motion guidelines doc has seven parts. Author them in order:
@@ -125,6 +147,58 @@ State explicitly what is allowed and forbidden. Typical baseline:
 - **Photosensitivity**: no more than 3 flashes per second; avoid full-screen high-contrast strobing.
 - **No meaning by motion/colour alone**: always pair with text or icon.
 - **Focus visibility**: never let an animation hide or remove the focus indicator.
+
+## Worked examples
+
+**GOOD — a token-anchored library entry:**
+> *Modal open: `duration-slow` (400ms) + `ease-emphasized`; scale 0.96→1, backdrop fades in. Close: `duration-base` (250ms) + `ease-accelerate`.*
+
+Every value is a named token, the close is shorter than the open, the easing matches the intent (emphasized for a brand moment in, accelerate to leave). An engineer can implement it directly and it will match every other modal.
+
+**ANTI-PATTERN — the "vibes" guideline:**
+> *"Animations should feel smooth, modern, and delightful. Use nice easing and keep things snappy but not too fast."*
+
+Why it fails: no named tokens, no values, no entrance/exit rule, nothing implementable — "smooth" and "snappy" contradict and every engineer interprets them differently, so the product ends up inconsistent (the exact problem the doc was meant to solve). The fix: replace adjectives with the token tables, map each pattern to tokens, and give do/don't pairs with concrete millisecond values.
+
+## Common mistakes
+
+| Symptom | Why it happens | Fix |
+|---|---|---|
+| Motion inconsistent across screens | Hand-tuned one-off values, no tokens | Define tokens once; every pattern references them |
+| Doc sounds nice, can't be built | Principles written as adjectives, not values | Pair every principle with a numeric token rule |
+| Everything bounces | Spring/overshoot used everywhere | Reserve spring/emphasized for brand moments only |
+| Exits feel sluggish | Exit duration ≥ entrance | Make exits one step shorter; accelerate them |
+| Animation breaks accessibility | No reduced-motion / colour-only states | Add the required accessibility section; pair motion with text/icon |
+| Logo animates differently everywhere | No logo rules | State one signature reveal + an explicit "never" list |
+| Token values renamed constantly | Names are literal (`duration-250`) | Name by purpose (`duration-base`) so values can change |
+
+## Deliverable spec — what a good motion guidelines doc contains
+
+The output is a structured document (template in references/full-template.md), not code. A complete doc has all seven parts, and:
+- 3-5 named principles, each with a one-line rule (not adjectives).
+- Duration and easing **tokens** with values/curves — the implementable core.
+- A motion library mapping every pattern to tokens.
+- Explicit logo allowed/never rules.
+- Feedback/state motion (loading, success, error, hover, focus).
+- A required accessibility section (reduced-motion, photosensitivity, focus, no meaning-by-colour-alone).
+- Concrete do/don't pairs that remove ambiguity.
+
+### Before you finish — checklist
+- [ ] 3-5 principles, each named and given a one-line rule.
+- [ ] Duration tokens defined with values; easing tokens with cubic-bezier curves.
+- [ ] Every library pattern names the tokens it uses.
+- [ ] Entrances decelerate, exits accelerate and are shorter; linear only for loops.
+- [ ] Logo rules state both allowed and never.
+- [ ] Feedback states pair motion with text/icon (never colour alone).
+- [ ] Accessibility section present: reduced-motion, photosensitivity, focus, contrast.
+- [ ] Do/don't pairs are concrete (with values), not vibes.
+- [ ] Token names are semantic (purpose), not literal values.
+
+## Related frameworks
+
+This doc is the *system-of-record* for a brand's motion; two sibling skills supply the upstream theory and the per-project feel — reference and apply them, don't duplicate their tables:
+- **`motion-principles`** — your principles section should encode the **Three Pillars** (intent → tone → craft); the **Primary/Secondary/Ambient** motion layers explain *why* a hero move and ambient drift get different tokens; the **1/3 Rule** justifies stagger limits (don't move everything at once). Cite these; keep the canonical tables there.
+- **`motion-direction`** — for a brand spanning product + marketing + broadcast, pick a named **Motion Personality** preset and state it at the top of the doc, then derive token values to match (snappier preset → shorter durations; premium preset → longer, smoother). The motion-language spec lives there.
 
 ## Quick reference
 
