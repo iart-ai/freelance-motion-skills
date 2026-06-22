@@ -1,0 +1,146 @@
+---
+name: brand-motion-guidelines
+description: This skill should be used when the user asks to "write motion guidelines", "create a brand motion system", "define easing and timing tokens", "document our animation principles", "build a motion language like Slack/IBM/Klarna", "set up entrance/exit/transition rules", or "add a reduced-motion / accessibility section". It outputs a fill-in-ready brand motion guidelines document.
+version: 0.1.0
+---
+
+# Brand Motion Guidelines
+
+Author a brand motion system — the document that defines how a brand or product moves, the way mature design systems (Slack, IBM Carbon, Klarna, Material) do it. Output is a fill-in-ready template covering principles, easing/timing tokens, a motion library, logo rules, feedback states, accessibility, and do/don't examples.
+
+## When to use
+
+Use when a brand or product needs a documented motion language, when animation feels inconsistent across a team, when defining named easing/duration tokens for designers and engineers, or when adding a reduced-motion/accessibility standard. The output is a structured doc, not code.
+
+## What a motion system contains
+
+A complete motion guidelines doc has seven parts. Author them in order:
+
+1. **Motion principles** — 3-5 named beliefs that govern every animation.
+2. **Timing & easing tokens** — named durations and curves, so motion is consistent and engineer-implementable.
+3. **Motion library** — entrance, exit, and transition patterns mapped to tokens.
+4. **Logo animation rules** — how the mark may and may not move.
+5. **Feedback & state motion** — loading, success, error, hover, focus.
+6. **Accessibility** — reduced-motion, photosensitivity, focus visibility.
+7. **Do / Don't** — concrete examples that make the rules unambiguous.
+
+## Tokens are the core
+
+Everything else references the tokens. Define durations and curves once, as named tokens; the library and components reuse them. This is what makes a motion system implementable rather than decorative.
+
+### Sample duration tokens (fill in / adjust)
+
+| Token | Value | Use |
+|---|---|---|
+| `duration-instant` | 100ms | Micro-feedback (toggle, tap) |
+| `duration-fast` | 150ms | Hover, small state change |
+| `duration-base` | 250ms | Standard UI transition (default) |
+| `duration-slow` | 400ms | Larger surfaces, modals, page sections |
+| `duration-slower` | 600ms | Hero/brand moments, full-screen |
+
+Rule of thumb: the larger the element/distance, the longer the duration. Most UI motion lives at 150-400ms; under ~100ms reads as instant, over ~500ms feels sluggish for routine UI.
+
+### Sample easing tokens (curves)
+
+| Token | cubic-bezier | Feel / use |
+|---|---|---|
+| `ease-standard` | (0.4, 0.0, 0.2, 1) | Default; element moving within view |
+| `ease-decelerate` (ease-out) | (0.0, 0.0, 0.2, 1) | Entrances — fast in, settle |
+| `ease-accelerate` (ease-in) | (0.4, 0.0, 1, 1) | Exits — ease in, speed off |
+| `ease-emphasized` | (0.2, 0.0, 0, 1) | Expressive/brand moments |
+| `ease-spring` | spring(stiffness, damping) | Playful overshoot (use sparingly) |
+
+Principle: entrances decelerate (objects arrive and settle), exits accelerate (objects leave with intent), and nothing important uses linear easing — linear feels mechanical and is reserved for continuous loops (spinners, progress).
+
+## Motion library (map patterns to tokens)
+
+| Pattern | Tokens | Behaviour |
+|---|---|---|
+| Fade in | `duration-base` + `ease-decelerate` | Opacity 0→1 |
+| Scale + fade in | `duration-base` + `ease-decelerate` | 0.96→1 scale, opacity 0→1 |
+| Slide up in | `duration-slow` + `ease-decelerate` | Y +8/16px → 0, fade in |
+| Fade out | `duration-fast` + `ease-accelerate` | Opacity 1→0 (exits faster than entrances) |
+| Modal open | `duration-slow` + `ease-emphasized` | Scale + fade, backdrop fades in |
+| Page/section transition | `duration-base` + `ease-standard` | Cross-fade or shared-element move |
+| List stagger | `duration-fast` per item, 30-50ms offset | Items cascade, not all at once |
+
+Default rule: exits are shorter than entrances; staggers use small offsets (30-50ms) so groups feel alive without dragging.
+
+## The template (fill in)
+
+```
+[BRAND] MOTION GUIDELINES                         Version: ___  Owner: ___
+
+1. PRINCIPLES
+   We move to: [principle 1 — e.g. "Guide attention, never steal it"]
+               [principle 2 — e.g. "Fast by default, expressive on purpose"]
+               [principle 3 — e.g. "Every motion has a reason"]
+               [principle 4] [principle 5]
+
+2. TIMING TOKENS
+   instant ___ms · fast ___ms · base ___ms · slow ___ms · slower ___ms
+
+3. EASING TOKENS
+   standard ____ · decelerate ____ · accelerate ____ · emphasized ____
+
+4. MOTION LIBRARY
+   Entrances: [list patterns + tokens]
+   Exits:     [list patterns + tokens]
+   Transitions:[list patterns + tokens]
+
+5. LOGO ANIMATION
+   Allowed: [reveal style, duration token, when it may animate]
+   Never:   [stretch, distort, rotate freely, recolour, exceed ___ms]
+
+6. FEEDBACK & STATE MOTION
+   Loading: [spinner/skeleton rules + when each]
+   Success: [confirmation motion]
+   Error:   [shake/colour rules — never colour alone]
+   Hover/Focus: [token + visible focus requirement]
+
+7. ACCESSIBILITY
+   Reduced motion: [what happens — see section below]
+   Photosensitivity: max 3 flashes/sec; no full-screen strobing.
+   Focus: focus indicators never animate away or disappear.
+
+8. DO / DON'T
+   ✅ [do]            ❌ [don't]
+```
+
+## Logo animation rules (fill in)
+
+State explicitly what is allowed and forbidden. Typical baseline:
+- **Allowed**: a reveal/build using `duration-slow`-`slower` + `ease-emphasized`; gentle settle; one signature build kept consistent everywhere.
+- **Never**: stretch/squash the mark out of proportion, free-rotate, recolour outside the palette, animate every appearance (reserve it for key moments), or exceed the agreed max duration.
+
+## Feedback & state motion
+
+- **Loading**: skeletons for content layout; spinners only for short, indeterminate waits; show progress for waits over ~1s.
+- **Success/error**: pair motion with a label or icon — never communicate state by colour or motion alone (accessibility).
+- **Hover/focus**: `duration-fast` + `ease-standard`; focus state must be clearly visible and must not animate itself out of view.
+
+## Accessibility (required section)
+
+- **Reduced motion**: honour the user's "reduce motion" setting. Replace movement/parallax/large transforms with simple opacity cross-fades or instant state changes. Keep essential meaning; remove decorative motion. (Conceptually maps to `prefers-reduced-motion`.)
+- **Photosensitivity**: no more than 3 flashes per second; avoid full-screen high-contrast strobing.
+- **No meaning by motion/colour alone**: always pair with text or icon.
+- **Focus visibility**: never let an animation hide or remove the focus indicator.
+
+## Quick reference
+
+| Decision | Default |
+|---|---|
+| Default UI duration | `duration-base` 250ms |
+| Entrance easing | decelerate (ease-out) |
+| Exit easing | accelerate (ease-in), shorter than entrance |
+| Linear easing | only for loops (spinners/progress) |
+| Stagger offset | 30-50ms per item |
+| Logo animation | reserved, consistent, never distort |
+| State feedback | motion + label/icon, never colour alone |
+| Reduced motion | swap transforms for fades/instant |
+
+## Reference files
+
+- `references/full-template.md` — the complete fill-in motion guidelines document with every section expanded and example copy.
+- `references/token-reference.md` — full duration and easing token tables with values, cubic-bezier curves, and usage notes.
+- `references/dos-and-donts.md` — a library of concrete do/don't pairs and worked principle examples (Slack/IBM/Material-style).
