@@ -4,6 +4,8 @@
 
 Five skills for freelance motion designers and studios running the business side: turning vague client asks into sign-off-ready briefs, building defensible quotes, capping scope creep, exporting to the right platform specs, and authoring brand motion systems.
 
+![Freelance Motion Skills — animated showcase](./showcase.gif)
+
 ## Install
 
 ```
