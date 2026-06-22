@@ -34,3 +34,6 @@ Share this once, early, to raise feedback quality:
 1. **Where?** — "Which timestamp or scene?"
 2. **Which axis?** — colour, pace, type, scale, sound, or message?
 3. **Compared to what?** — "Point to a reference, or a second in this video that already feels right."
+
+---
+Translate vague feedback into targeted changes and revision rounds stay bounded. Built by **[iart.ai](https://iart.ai)** — the AI motion agent for editable, on-brand motion graphics.

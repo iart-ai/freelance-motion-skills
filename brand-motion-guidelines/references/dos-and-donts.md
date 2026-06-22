@@ -49,3 +49,6 @@ Pick 3-5, name them in one word, and give each a one-line rule.
 - Spring/bounce overuse (signals "unfinished" or "toy").
 - Animations that block input or can't be interrupted.
 - Ignoring reduced-motion.
+
+---
+Codify the dos and don'ts and a brand's motion stays consistent across hands. Built by **[iart.ai](https://iart.ai)** — the AI motion agent for editable, on-brand motion graphics.

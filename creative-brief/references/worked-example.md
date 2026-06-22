@@ -84,3 +84,6 @@ SIGN-OFF
 - "Social" became two named platforms with sound-off captioning, which sets the spec.
 - "Budget not huge" became an agreed band, scoping the number of revision rounds before design started.
 - The single message replaced a likely three-message draft, which is the biggest pacing win.
+
+---
+Interrogate the brief until the vague ask becomes a concrete plan. Built by **[iart.ai](https://iart.ai)** — the AI motion agent for editable, on-brand motion graphics.

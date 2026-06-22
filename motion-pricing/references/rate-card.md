@@ -63,3 +63,6 @@ days produces a rate that cannot cover a normal year.
 
 Reconcile any quote back to the day-rate worksheet — the per-minute and
 per-deliverable ranges are cross-checks, not substitutes for the day math.
+
+---
+Price from real cost drivers and a motion quote holds up to scrutiny. Built by **[iart.ai](https://iart.ai)** — the AI motion agent for editable, on-brand motion graphics.
