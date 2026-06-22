@@ -193,8 +193,8 @@ The output is a one-page document (the filled template) plus, when gaps exist, o
 ## Related frameworks
 
 The brief sets *intent*; two sibling skills turn that intent into motion direction — reference them, don't restate them here:
-- **`motion-direction`** — once tone is locked (dimension 4), pick a named **Motion Personality** preset there and cite it in the brief so everyone animates to the same numeric feel.
-- **`motion-principles`** — the **Three Pillars** (intent → tone → craft) are the upstream version of this brief's logic; the **Primary/Secondary/Ambient** motion layers and the **1/3 Rule** belong in execution, not the brief — don't pull them in here.
+- **`motion-art-direction`** — once tone is locked (dimension 4), pick a named **Motion Personality** preset there and cite it in the brief so everyone animates to the same numeric feel.
+- **`animation-principles`** — the **Three Pillars** (intent → tone → craft) are the upstream version of this brief's logic; the **Primary/Secondary/Ambient** motion layers and the **1/3 Rule** belong in execution, not the brief — don't pull them in here.
 
 ## Quick reference
 

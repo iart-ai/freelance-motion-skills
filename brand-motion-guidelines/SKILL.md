@@ -22,7 +22,7 @@ How many surfaces/teams will use this?
 │   library. Skip deep logo/state sections unless relevant.
 ├─ A product (app/web) → full 7-part doc; tokens are mandatory.
 └─ A brand across product + marketing + broadcast → full doc PLUS a
-    Motion Personality preset (see motion-direction) so every medium matches.
+    Motion Personality preset (see motion-art-direction) so every medium matches.
 
 Picking the token for a given motion:
   duration: larger element / longer travel → longer token
@@ -197,8 +197,8 @@ The output is a structured document (template in references/full-template.md), n
 ## Related frameworks
 
 This doc is the *system-of-record* for a brand's motion; two sibling skills supply the upstream theory and the per-project feel — reference and apply them, don't duplicate their tables:
-- **`motion-principles`** — your principles section should encode the **Three Pillars** (intent → tone → craft); the **Primary/Secondary/Ambient** motion layers explain *why* a hero move and ambient drift get different tokens; the **1/3 Rule** justifies stagger limits (don't move everything at once). Cite these; keep the canonical tables there.
-- **`motion-direction`** — for a brand spanning product + marketing + broadcast, pick a named **Motion Personality** preset and state it at the top of the doc, then derive token values to match (snappier preset → shorter durations; premium preset → longer, smoother). The motion-language spec lives there.
+- **`animation-principles`** — your principles section should encode the **Three Pillars** (intent → tone → craft); the **Primary/Secondary/Ambient** motion layers explain *why* a hero move and ambient drift get different tokens; the **1/3 Rule** justifies stagger limits (don't move everything at once). Cite these; keep the canonical tables there.
+- **`motion-art-direction`** — for a brand spanning product + marketing + broadcast, pick a named **Motion Personality** preset and state it at the top of the doc, then derive token values to match (snappier preset → shorter durations; premium preset → longer, smoother). The motion-language spec lives there.
 
 ## Quick reference
 
