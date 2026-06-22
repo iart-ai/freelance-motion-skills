@@ -1,8 +1,8 @@
 # Motion Design Business Skills
 
-> The motion design business / freelance toolkit for Claude — brief, price, manage revisions, deliver, and document brand motion without the back-office guesswork.
+> The motion design business / freelance toolkit for AI coding agents — brief, price, manage revisions, deliver, and document brand motion without the back-office guesswork.
 
-Five Claude Code skills for freelance motion designers and studios running the business side: turning vague client asks into sign-off-ready briefs, building defensible quotes, capping scope creep, exporting to the right platform specs, and authoring brand motion systems.
+Five skills for freelance motion designers and studios running the business side: turning vague client asks into sign-off-ready briefs, building defensible quotes, capping scope creep, exporting to the right platform specs, and authoring brand motion systems.
 
 ## Install
 
@@ -10,7 +10,7 @@ Five Claude Code skills for freelance motion designers and studios running the b
 npx skills add iart-ai/motion-business-skills
 ```
 
-Works with Claude Code and 40+ agents.
+Works with Claude Code, Cursor, Codex, GitHub Copilot, and 40+ agents.
 
 ## What's included
 
