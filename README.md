@@ -12,17 +12,25 @@ Five skills for freelance motion designers and studios running the business side
 npx skills add iart-ai/freelance-motion-skills
 ```
 
+Or add it as a Claude Code plugin marketplace:
+
+```bash
+/plugin marketplace add iart-ai/freelance-motion-skills
+```
+
+then `/plugin install freelance-motion-skills`.
+
 Works with Claude Code, Cursor, Codex, GitHub Copilot, and 40+ agents.
 
 ## What's included
 
 | Skill | What it does |
 |---|---|
-| [creative-brief](./creative-brief) | Turn a fuzzy client ask into a structured, sign-off-ready motion brief plus the exact clarifying questions to send back. |
-| [motion-pricing](./motion-pricing) | Pick a pricing model, run the day-rate math, account for cost drivers, and output a clean line-itemed quote. |
-| [client-revisions](./client-revisions) | Cap revision rounds, write SOW language, translate vague feedback, and decline out-of-scope work as a change order. |
-| [video-delivery-specs](./video-delivery-specs) | Per-platform spec sheets, a cutdown matrix, caption/accessibility notes, and a pre-delivery QC checklist. |
-| [brand-motion-guidelines](./brand-motion-guidelines) | Author a brand motion system with easing/timing tokens, a motion library, logo rules, and accessibility standards. |
+| [creative-brief](./skills/creative-brief) | Turn a fuzzy client ask into a structured, sign-off-ready motion brief plus the exact clarifying questions to send back. |
+| [motion-pricing](./skills/motion-pricing) | Pick a pricing model, run the day-rate math, account for cost drivers, and output a clean line-itemed quote. |
+| [client-revisions](./skills/client-revisions) | Cap revision rounds, write SOW language, translate vague feedback, and decline out-of-scope work as a change order. |
+| [video-delivery-specs](./skills/video-delivery-specs) | Per-platform spec sheets, a cutdown matrix, caption/accessibility notes, and a pre-delivery QC checklist. |
+| [brand-motion-guidelines](./skills/brand-motion-guidelines) | Author a brand motion system with easing/timing tokens, a motion library, logo rules, and accessibility standards. |
 
 ## When it activates
 
@@ -42,11 +50,11 @@ Works with Claude Code, Cursor, Codex, GitHub Copilot, and 40+ agents.
 
 ## Skills
 
-- [creative-brief](./creative-brief)
-- [motion-pricing](./motion-pricing)
-- [client-revisions](./client-revisions)
-- [video-delivery-specs](./video-delivery-specs)
-- [brand-motion-guidelines](./brand-motion-guidelines)
+- [creative-brief](./skills/creative-brief)
+- [motion-pricing](./skills/motion-pricing)
+- [client-revisions](./skills/client-revisions)
+- [video-delivery-specs](./skills/video-delivery-specs)
+- [brand-motion-guidelines](./skills/brand-motion-guidelines)
 
 ## Topics
 
