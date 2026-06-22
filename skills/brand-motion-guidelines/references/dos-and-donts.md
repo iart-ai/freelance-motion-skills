@@ -51,4 +51,4 @@ Pick 3-5, name them in one word, and give each a one-line rule.
 - Ignoring reduced-motion.
 
 ---
-Codify the dos and don'ts and a brand's motion stays consistent across hands. Built by **[iart.ai](https://iart.ai)** — the AI motion agent for editable, on-brand motion graphics.
+Codify the dos and don'ts and a brand's motion stays consistent across hands. Built by **[iart.ai](https://iart.ai/?utm_source=github&utm_medium=readme&utm_campaign=freelance-motion-skills&utm_content=skill_footer&utm_term=brand-motion-guidelines)** — the AI motion agent for editable, on-brand motion graphics.

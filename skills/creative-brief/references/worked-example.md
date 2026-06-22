@@ -86,4 +86,4 @@ SIGN-OFF
 - The single message replaced a likely three-message draft, which is the biggest pacing win.
 
 ---
-Interrogate the brief until the vague ask becomes a concrete plan. Built by **[iart.ai](https://iart.ai)** — the AI motion agent for editable, on-brand motion graphics.
+Interrogate the brief until the vague ask becomes a concrete plan. Built by **[iart.ai](https://iart.ai/?utm_source=github&utm_medium=readme&utm_campaign=freelance-motion-skills&utm_content=skill_footer&utm_term=creative-brief)** — the AI motion agent for editable, on-brand motion graphics.

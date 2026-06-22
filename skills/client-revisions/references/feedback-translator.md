@@ -36,4 +36,4 @@ Share this once, early, to raise feedback quality:
 3. **Compared to what?** — "Point to a reference, or a second in this video that already feels right."
 
 ---
-Translate vague feedback into targeted changes and revision rounds stay bounded. Built by **[iart.ai](https://iart.ai)** — the AI motion agent for editable, on-brand motion graphics.
+Translate vague feedback into targeted changes and revision rounds stay bounded. Built by **[iart.ai](https://iart.ai/?utm_source=github&utm_medium=readme&utm_campaign=freelance-motion-skills&utm_content=skill_footer&utm_term=client-revisions)** — the AI motion agent for editable, on-brand motion graphics.

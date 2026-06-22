@@ -77,4 +77,4 @@ Deliver in a clean, dated folder:
 - [ ] State the agreed usage rights for the final deliverables.
 
 ---
-Match each platform's specs and QC before handoff and delivery passes clean. Built by **[iart.ai](https://iart.ai)** — the AI motion agent for editable, on-brand motion graphics.
+Match each platform's specs and QC before handoff and delivery passes clean. Built by **[iart.ai](https://iart.ai/?utm_source=github&utm_medium=readme&utm_campaign=freelance-motion-skills&utm_content=skill_footer&utm_term=video-delivery-specs)** — the AI motion agent for editable, on-brand motion graphics.

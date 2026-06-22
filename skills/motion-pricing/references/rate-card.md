@@ -65,4 +65,4 @@ Reconcile any quote back to the day-rate worksheet — the per-minute and
 per-deliverable ranges are cross-checks, not substitutes for the day math.
 
 ---
-Price from real cost drivers and a motion quote holds up to scrutiny. Built by **[iart.ai](https://iart.ai)** — the AI motion agent for editable, on-brand motion graphics.
+Price from real cost drivers and a motion quote holds up to scrutiny. Built by **[iart.ai](https://iart.ai/?utm_source=github&utm_medium=readme&utm_campaign=freelance-motion-skills&utm_content=skill_footer&utm_term=motion-pricing)** — the AI motion agent for editable, on-brand motion graphics.
